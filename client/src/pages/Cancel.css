@@ -1,0 +1,86 @@
+/* Cancel.css */
+
+/* Overall container for the cancel page */
+.cancel-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f8f8f8;
+    font-family: 'Arial', sans-serif;
+    flex-direction: column;
+  }
+  
+  /* Content container for title, message, and button */
+  .cancel-content {
+    text-align: center;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    max-width: 400px;
+    width: 100%;
+  }
+  
+  /* Title styling */
+  .cancel-title {
+    font-size: 2rem;
+    color: #d9534f;
+    margin-bottom: 10px;
+  }
+  
+  /* Message styling */
+  .cancel-message {
+    font-size: 1rem;
+    color: #5e5e5e;
+    margin-bottom: 20px;
+  }
+  
+  /* Retry button styling */
+  .retry-button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #d9534f;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .retry-button:hover {
+    background-color: #c9302c;
+  }
+  
+  /* Styling for the animation circle */
+  .cancel-animation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+  }
+  
+  .cancel-circle {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #d9534f;
+    animation: cancelAnimation 1.5s ease-in-out infinite;
+  }
+  
+  /* Animation for the cancel circle */
+  @keyframes cancelAnimation {
+    0% {
+      transform: scale(1);
+      opacity: 1;
+    }
+    50% {
+      transform: scale(1.2);
+      opacity: 0.7;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  
